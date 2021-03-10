@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #c5d5cb; /* fallback for old browsers */
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin-right: auto;
+	color: white;
+}
+header,
+li,
+a,
+button {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px;
+}
+nav_links {
+	list-style: none;
+}
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+	text-decoration: none;
+	color: #0088a9;
+}
+button {
+	padding: 1px 5px;
+	background-color: rgba(0, 136, 169, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+header {
+	background-color: #23252a;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 10%;
+}
+.color_coding {
+	color: white;
+	padding: 25px 150px 0px 150px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.color_coding div:nth-child(1) {
+	height: 2vh;
+	width: 2vh;
+	background-color: black;
+}
+.color_coding div:nth-child(2) {
+	height: 2vh;
+	width: 2vh;
+	background-color: rgb(105, 180, 230);
+}
+.color_coding div:nth-child(3) {
+	height: 2vh;
+	width: 2vh;
+	background-color: rgb(53, 245, 165);
+}
+color_coding h6 {
+	align-items: flex-start;
+	padding-right: 0px;
+}
+.boxcontainer {
+	color: black;
+	display: grid;
+	padding: 50px 150px 0px 150px;
+	align-items: center;
+	grid-gap: 1px 1px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.box {
+	height: 10vh;
+	width: 12vh;
+	transition: 0ms;
+	text-align: center;
+
+	background: #e0eafc; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#cfdef3,
+		#e0eafc
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.box:hover {
+	transform: rotateY(180deg) scale(3);
+	background: #e0eafc; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#cfdef3,
+		#e0eafc
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
